@@ -6,50 +6,64 @@
     <title>Promedio Estudiantes</title>
 </head>
 <body>
-    <div>
-        <div>
+    <div class="contentPage">
+        <div class="contentTitulo">
             <h1>Calculadora del Promedio de Actividades</h1>
         </div>
-        <div>
+        <div id="modalEstudiante" class="contentmodalEstudiante">
 
-           <form>
+           <form id="informacionEstudiate" name="infoEstudiante">
             <div>
-               <div>
-                <h2>Estudiante</h2>
+               <div class="tituloFormEst">
+                <h2 id="tituloInfoEst">Estudiante</h2>
                </div>
                <div>
                 <label>Nombre:</label><br>
                 <input><br>
+               </div>
+               <div>
                 <label>Materia:</label><br>
                 <input><br>
+               </div>
+               <div>
                 <label>Programa:</label><br>
                 <input><br>
+               </div>
             </div>
-            <div>
-                <button>Modificar</button>
+            <div class="controlInputM">
+                <button  type="submit" class="btnMod">Modificar</button>
             </div>
             </form>
 
            </div>
-           <div>
-            <div>
-                <button>X</button>
+           <div class="contentFormEst">
+            <div class="cerrarForm">
+                <button id="cerrarFormBtn" class="btnCerrar">X</button>
             </div>
             <div>
-                <form>
-                    <div>
+                <form id="formularioEstudiante" name="formEstudiante">
+                    <div class="controlInput">
                         <label>Nombre:</label><br>
-                <input><br>
-                <label>Materia:</label><br>
-                <input><br>
-                <label>Programa:</label><br>
-                <select>
-                    <option>Ingeniería del Software</option>
-                    <option>Ingeniería Multimedia</option>
-                </select>
+                        <input id="nombre" name="nombre" type="text" required><br>
+
                     </div>
-                    <div>
-                        <button>Modificar</button>
+                    <div class="controlInput">
+
+                        <label>Materia:</label><br>
+                        <input id="materia" name="materia" type="text" required><br>
+                
+                    </div>
+                    <div class="controlInput">
+                        <label>Programa:</label><br>
+                        <select>
+                            <option>Ingeniería del Software</option>
+                            <option>Ingeniería Multimedia</option>
+                            <option>Ingeniería de Sistemas</option>
+                        </select>
+                
+                    </div>
+                    <div class="controlBtnMod">
+                        <button type="submit" class="btnModEstud" >Modificar</button>
                     </div>
                 
                 </form>
@@ -59,9 +73,12 @@
            </div>
            
         </div>
-        <div>
-            <div>
-                <table>
+        <div id="infoTableAct" class="contentTableAct">
+            <div class="contentBtnRegistrar">
+                <button id="registrarBtn" class="btnRegistrar">Registrar</button>
+            </div>
+            <div class="contentTableActividades">
+                <table id="ActividadesTable" class="tableAct">
                     <thead>
                         <tr>
                             <th>Actividad</th>
@@ -73,16 +90,41 @@
                             <td>Taller 1</td>
                             <td>4</td>
                             <td>
-                                <button>Eliminar</button>
+                                <button>
+                                    <img 
+                                    src="https://prints.ultracoloringpages.com/9b08a89aa19886996cf1ad04a2c1cc84.png"
+                                    width="60px"
+                                    height="60px">
+                                </button>
                             </td>
                         </tr>
                     </tbody>
                     <tfoot>
                         <tr>
+                            <td>Promedio</td>
+                            <td>4</td>
 
                         </tr>
                     </tfoot>
                 </table>
+            </div>
+        </div>
+        <div id="formularioAct" class="contentFormAct">
+            <div class="contentActividades">
+                <form id="formularioActividades" name="formActividades">
+                    <div class="controlInputAct">
+                        <label>Actividad</label><br>
+                        <input id="actividad" name="actividad" type="text"><br>
+                        
+                    </div>
+                    <div class="controlInputAct">
+                        <label>Nota</label><br>
+                        <input id="nota" name="nota" type="number"><br>
+                    </div>
+                    <div class="controlBtnGuard">
+                        <button type="submit" class="btnGuardar">Guardar</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
