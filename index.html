@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     
     <title>Promedio Estudiantes</title>
+    <link href="CSS/index.css" rel="stylesheet">
 </head>
 <body>
     <div class="contentPage">
@@ -34,46 +35,8 @@
                 <button  type="submit" class="btnMod">Modificar</button>
             </div>
             </form>
-
            </div>
-           <div class="contentFormEst">
-            <div class="cerrarForm">
-                <button id="cerrarFormBtn" class="btnCerrar">X</button>
-            </div>
-            <div>
-                <form id="formularioEstudiante" name="formEstudiante">
-                    <div class="controlInput">
-                        <label>Nombre:</label><br>
-                        <input id="nombre" name="nombre" type="text" required><br>
-
-                    </div>
-                    <div class="controlInput">
-
-                        <label>Materia:</label><br>
-                        <input id="materia" name="materia" type="text" required><br>
-                
-                    </div>
-                    <div class="controlInput">
-                        <label>Programa:</label><br>
-                        <select>
-                            <option>Ingeniería del Software</option>
-                            <option>Ingeniería Multimedia</option>
-                            <option>Ingeniería de Sistemas</option>
-                        </select>
-                
-                    </div>
-                    <div class="controlBtnMod">
-                        <button type="submit" class="btnModEstud" >Modificar</button>
-                    </div>
-                
-                </form>
-
-            </div>
-            
-           </div>
-           
-        </div>
-        <div id="infoTableAct" class="contentTableAct">
+           <div id="infoTableAct" class="contentTableAct">
             <div class="contentBtnRegistrar">
                 <button id="registrarBtn" class="btnRegistrar">Registrar</button>
             </div>
@@ -109,24 +72,60 @@
                 </table>
             </div>
         </div>
-        <div id="formularioAct" class="contentFormAct">
-            <div class="contentActividades">
-                <form id="formularioActividades" name="formActividades">
-                    <div class="controlInputAct">
-                        <label>Actividad</label><br>
-                        <input id="actividad" name="actividad" type="text"><br>
-                        
-                    </div>
-                    <div class="controlInputAct">
-                        <label>Nota</label><br>
-                        <input id="nota" name="nota" type="number"><br>
-                    </div>
-                    <div class="controlBtnGuard">
-                        <button type="submit" class="btnGuardar">Guardar</button>
-                    </div>
-                </form>
-            </div>
-        </div>
     </div>
+    <div class="contentFormEst">
+        <div class="cerrarForm">
+            <button id="cerrarFormBtn" class="btnCerrar">X</button>
+        </div>
+        <div>
+            <form id="formularioEstudiante" name="formEstudiante">
+                <div class="controlInput">
+                    <label>Nombre:</label><br>
+                    <input id="nombre" name="nombre" type="text" required><br>
+
+                </div>
+                <div class="controlInput">
+
+                    <label>Materia:</label><br>
+                    <input id="materia" name="materia" type="text" required><br>
+            
+                </div>
+                <div class="controlInput">
+                    <label>Programa:</label><br>
+                    <select>
+                        <option>Ingeniería del Software</option>
+                        <option>Ingeniería Multimedia</option>
+                        <option>Ingeniería de Sistemas</option>
+                    </select>
+            
+                </div>
+                <div class="controlBtnMod">
+                    <button type="submit" class="btnModEstud" >Modificar</button>
+                </div>
+            
+            </form>
+
+        </div>
+
+    </div>
+    <div id="formularioAct" class="contentFormAct">
+        <div class="contentActividades">
+            <form id="formularioActividades" name="formActividades">
+                <div class="controlInputAct">
+                    <label>Actividad</label><br>
+                    <input id="actividad" name="actividad" type="text"><br>
+                    
+                </div>
+                <div class="controlInputAct">
+                    <label>Nota</label><br>
+                    <input id="nota" name="nota" type="number"><br>
+                </div>
+                <div class="controlBtnGuard">
+                    <button type="submit" class="btnGuardar">Guardar</button>
+                </div>
+            </form>
+        </div>   
+    </div>    
+        
 </body>
 </html>
