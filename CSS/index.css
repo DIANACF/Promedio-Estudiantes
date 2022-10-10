@@ -22,7 +22,7 @@ body {
 
 
 .contentTitulo {
-    width: 50%;
+    grid-area: titulo;
     text-align: center;
  
 }
@@ -46,3 +46,11 @@ th, td {
 }
 
 tbody tr:hover {background-color: rgb(129, 203, 44);}
+
+.contentFormEst {
+    display: none;
+}
+
+.contentFormAct {
+    display: none;
+}
