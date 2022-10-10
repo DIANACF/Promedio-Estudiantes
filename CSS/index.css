@@ -3,16 +3,33 @@ body {
 }
 
 .contentPage {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+   display: grid;
+   gap: 50px 100px;/*hay que arreglar esto*/
 }
+
 
 .contentTitulo {
     width: 50%;
     text-align: center;
  
 }
+
+.contentTableActividades {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;   
+    justify-content: center;
+}
+
+.tableAct, th, td {
+    border-spacing: 15px;
+     
+}
+
+th, td {
+    
+    border-bottom: 1px solid rgb(81, 75, 75);
+
+}
+
+tr:hover {background-color: rgb(129, 203, 44);}
