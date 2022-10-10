@@ -1,10 +1,23 @@
 body {
-    margin: 15px;
+    height: 100vh;
 }
 
 .contentPage {
    display: grid;
-   gap: 50px 100px;/*hay que arreglar esto*/
+   gap: 10px;
+   width: 100%;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 100px 1fr;
+   grid-template-areas: "titulo titulo titulo"
+   "Estudiante tabla tabla";
+}
+
+.contentEstudiante {
+    grid-area: Estudiante;
+}
+
+.contentTableAct  {
+    grid-area: tabla;
 }
 
 
@@ -32,4 +45,4 @@ th, td {
 
 }
 
-tr:hover {background-color: rgb(129, 203, 44);}
+tbody tr:hover {background-color: rgb(129, 203, 44);}
