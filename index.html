@@ -5,6 +5,7 @@
     
     <title>Promedio Estudiantes</title>
     <link href="CSS/index.css" rel="stylesheet">
+    <link href="CSS/formularios.css" rel="stylesheet">
 </head>
 <body>
     <div class="contentPage">
@@ -51,7 +52,7 @@
                             <td>Taller 1</td>
                             <td>4</td>
                             <td>
-                                <button>
+                                <button id="eliminarBtn" class="btnEliminar">
                                     <img 
                                     src="https://prints.ultracoloringpages.com/9b08a89aa19886996cf1ad04a2c1cc84.png"
                                     width="60px"
@@ -67,14 +68,16 @@
 
                         </tr>
                     </tfoot>
+                
                 </table>
+                <div class="contentBtnRegistrar">
+                    <button id="registrarBtn" class="btnRegistrar">Registrar</button>
+                </div>
             </div>
-            <div class="contentBtnRegistrar">
-                <button id="registrarBtn" class="btnRegistrar">Registrar</button>
-            </div>
+            
         </div>
     </div>
-    <div class="contentFormEst">
+    <div class="contentModal contentFormEst">
         <div class="cerrarForm">
             <button id="cerrarFormBtn" class="btnCerrar">X</button>
         </div>
@@ -110,7 +113,7 @@
         </div>
 
     </div>
-    <div id="formularioAct" class="contentFormAct">
+    <div id="formularioAct" class="contentModal contentFormAct" style = "display: none;">
         <div class="contentActividades">
             <form id="formularioActividades" name="formActividades">
                 <div class="controlInputAct">

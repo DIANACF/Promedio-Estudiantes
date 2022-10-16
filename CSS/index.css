@@ -1,9 +1,12 @@
 body {
     height: 100vh;
+    background-image: url("../IMAGENES/FONDO.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .contentPage {
-   display: grid;
+   display: grid; 
    gap: 10px;
    width: 100%;
    grid-template-columns: 1fr 1fr 1fr;
@@ -30,6 +33,7 @@ body {
 .contentTableActividades {
     width: 50%;
     display: flex;
+    flex-direction: column;
     align-items: flex-start;   
     justify-content: center;
 }
@@ -47,10 +51,57 @@ th, td {
 
 tbody tr:hover {background-color: rgb(129, 203, 44);}
 
-.contentFormEst {
+/*.contentFormEst {
     display: none;
-}
+}*/
 
 .contentFormAct {
     display: none;
+}
+
+.btnMod {
+    padding: 10px;
+    color: rgb(252, 252, 252);
+    background-color: rgb(21, 175, 202);
+    border: 0;
+    border-radius: 12px;
+}
+
+.btnMod:hover{
+    background-color: rgb(11, 42, 113); 
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
+}
+
+.btnMod:active {
+    background-color: rgb(255, 255, 255);
+    color:  rgb(11, 42, 113);
+}
+
+.btnRegistrar {
+    padding: 10px;
+    color: rgb(252, 252, 252);
+    background-color: rgb(21, 175, 202);
+    border: 0;
+    border-radius: 12px;
+}
+
+.btnRegistrar:hover {
+    background-color: rgb(11, 42, 113); 
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
+}
+
+.btnRegistrar:active {
+    background-color: rgb(255, 255, 255);
+    color:  rgb(11, 42, 113);
+}
+
+.btnEliminar {
+    background-color: rgb(98, 180, 216);
+    border: 0px;
+    border-radius: 12px;
+}
+
+.btnEliminar:active {
+    background-color: rgb(255, 255, 255);
+    color:  rgb(96, 132, 216);
 }
