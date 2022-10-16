@@ -77,7 +77,7 @@
             
         </div>
     </div>
-    <div class="contentModal">
+    <div class="contentModal" style = "display: none;">
     <div class="contentFormEst">
         <div class="cerrarForm">
             <button id="cerrarFormBtn" class="btnCerrar">X</button>
@@ -118,17 +118,21 @@
     <div class="contentModal" style = "display: none;">
     <div id="formularioAct" class="contentFormAct" >
         <div class="contentActividades">
+            <div class="cerrarForm">
+                <button id="cerrarFormBtn" class="btnCerrar">X</button>
+            </div>
             <form id="formularioActividades" name="formActividades">
-                <div class="controlInputAct">
-                    <label>Actividad</label><br>
-                    <input id="actividad" name="actividad" type="text"><br>
+
+                <div class="controlInput">
+                    <label>Actividad:</label>
+                    <input id="actividad" name="actividad" type="text">
                     
                 </div>
-                <div class="controlInputAct">
-                    <label>Nota</label><br>
-                    <input id="nota" name="nota" type="number"><br>
+                <div class="controlInput">
+                    <label>Nota:</label>
+                    <input id="nota" name="nota" type="number">
                 </div>
-                <div class="controlBtnGuard">
+                <div class="controlBtnMod">
                     <button type="submit" class="btnGuardar">Guardar</button>
                 </div>
             </form>
