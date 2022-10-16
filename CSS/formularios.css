@@ -39,9 +39,23 @@
 }
 
 .controlInput {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
     margin-top: 15px;
-    margin-bottom: 15px;
-    justify-content: flex-start;
-    align-items: flex-start;
+    
+}
 
+.controlInput label {
+    width: 20px;
+   
+}
+
+.controlBtnMod button{
+    margin-top: 15px;
+    padding: 10px;
+    color: rgb(252, 252, 252);
+    background-color: rgb(21, 175, 202);
+    border: 0;
+    border-radius: 12px;
 }
