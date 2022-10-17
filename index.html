@@ -14,26 +14,26 @@
         </div>
         <div id="Estudiante" class="contentEstudiante">
 
-           <form id="informacionEstudiate" name="infoEstudiante">
+           <form id="informacionEstudiate">
             <div>
                <div class="tituloFormEst">
                 <h2 id="tituloInfoEst">Estudiante</h2>
                </div>
                <div>
                 <label>Nombre:</label><br>
-                <input><br>
+                <input disabled name="nombre"><br>
                </div>
                <div>
                 <label>Materia:</label><br>
-                <input><br>
+                <input disabled name="materia"><br>
                </div>
                <div>
                 <label>Programa:</label><br>
-                <input><br>
+                <input disabled name = "programa"><br>
                </div>
             </div>
             <div class="controlInputM">
-                <button  type="submit" class="btnMod" >Modificar</button>
+                <button  type="button" class="btnMod" onclick="MostrarModalEstudiante()" >Modificar</button>
             </div>
             </form>
            </div>
@@ -47,40 +47,40 @@
                             <th>Nota</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody id="tbody">
+                        <!--<tr>
                             <td>Taller 1</td>
                             <td>4</td>
                             <td>
-                                <button id="eliminarBtn" class="btnEliminar">
+                                <button id="eliminarBtn" class="btnEliminar" onclick= "eliminarNota(0)">
                                     <img 
                                     src="https://prints.ultracoloringpages.com/9b08a89aa19886996cf1ad04a2c1cc84.png"
                                     width="60px"
                                     height="60px">
                                 </button>
                             </td>
-                        </tr>
+                        </tr>-->
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td>Promedio</td>
-                            <td>4</td>
+                            <td >Promedio</td>
+                            <td id="promedio"></td>
 
                         </tr>
                     </tfoot>
                 
                 </table>
                 <div class="contentBtnRegistrar">
-                    <button id="registrarBtn" class="btnRegistrar">Registrar</button>
+                    <button id="registrarBtn" class="btnRegistrar" onclick="MostrarModalNota()">Registrar</button>
                 </div>
             </div>
             
         </div>
     </div>
-    <div class="contentModal" style = "display: none;">
+    <div class="contentModal" style = "display: none;" id="contenedorModalFormEst">
     <div class="contentFormEst">
         <div class="cerrarForm">
-            <button id="cerrarFormBtn" class="btnCerrar">X</button>
+            <button id="cerrarFormBtn" class="btnCerrar" onclick="CerrarModalEstudiante()">X</button>
         </div>
         <div>
             <form id="formularioEstudiante" name="formEstudiante">
@@ -105,8 +105,8 @@
                     
             
                 </div>
-                <div class="controlBtnMod">
-                    <button type="submit">Modificar</button>
+                <div class="controlBtnMod" >
+                    <button type="button" id = "btnRegistrarEstudiante">Modificar</button>
                 </div>
             
             </form>
@@ -115,11 +115,11 @@
 
     </div>
     </div>
-    <div class="contentModal" style = "display: none;">
-    <div id="formularioAct" class="contentFormAct" >
+    <div class="contentModal" style = "display: none;" id="contenedorModalFormNota">
+    <div  class="contentFormAct" >
         <div class="contentActividades">
             <div class="cerrarForm">
-                <button id="cerrarFormBtn" class="btnCerrar">X</button>
+                <button id="cerrarFormBtn" class="btnCerrar" onclick="CerrarModalNota()">X</button>
             </div>
             <form id="formularioActividades" name="formActividades">
 
@@ -130,10 +130,10 @@
                 </div>
                 <div class="controlInput">
                     <label>Nota:</label>
-                    <input id="nota" name="nota" type="number">
+                    <input id="nota" name="nota" type="number"  min ="0" max="5" step="0.1">
                 </div>
                 <div class="controlBtnMod">
-                    <button type="submit" class="btnGuardar">Guardar</button>
+                    <button type="button" class="btnGuardar" onclick="registrarNota()">Guardar</button>
                 </div>
             </form>
         </div>   
